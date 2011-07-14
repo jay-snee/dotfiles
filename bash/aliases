@@ -1,0 +1,31 @@
+# Top ten recent commands:
+# history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+
+# Bash editing
+alias reload='source ~/.bashrc'
+alias dotfiles='mate ~/bin/dotfiles'
+
+# top
+alias tu='top -o cpu'
+alias tm='top -o vsize'
+
+# git
+alias g='git status'
+alias gc='git commit -v -a'
+alias gcn='git checkout -b'
+alias gco='git checkout'
+alias gitk='screen -d -m gitk'
+alias gb="git branch"
+alias ga="git add"
+alias gpo="git push origin master"
+
+# utils
+alias ls="ls -al"
+alias psaux="ps aux | grep"
+alias ..='cd ..'
+alias errlog="tail -f /var/log/apache2/error_log"
+
+# Rails
+alias resetapp=" bundle exec rake app:reset"
+
+

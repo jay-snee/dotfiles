@@ -11,7 +11,7 @@ alias tm='top -o vsize'
 
 # git
 alias g='git status'
-alias gc='git commit -v -a'
+alias gc='git commit -a -v'
 alias gcn='git checkout -b'
 alias gco='git checkout'
 alias gitk='screen -d -m gitk'
@@ -27,5 +27,6 @@ alias errlog="tail -f /var/log/apache2/error_log"
 
 # Rails
 alias resetapp=" bundle exec rake app:reset"
+alias unit="rake test:units"
 
 

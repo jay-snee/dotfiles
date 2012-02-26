@@ -17,18 +17,21 @@ alias gco='git checkout'
 alias gitk='screen -d -m gitk'
 alias gb="git branch"
 alias ga="git add"
-alias gpo="git push origin master"
+alias gpo="git push origin"
 alias gph="git push heroku master"
+alias "hvs"="HEROKU_SSL_VERIFY=disable heroku"
+alias bs="bin/spectre"
 
 # utils
 alias ls="ls -al"
 alias psaux="ps aux | grep"
-alias ..='cd ..'
 alias errlog="tail -f /var/log/apache2/error_log"
 
 # Rails
-alias resetapp=" bundle exec rake app:reset"
+alias resetapp="bundle exec rake app:reset"
 alias unit="rake test:units"
 alias runspec="rspec spec --color --format doc"
+alias cuke="bundle exec cucumber -r features"
+alias routes="rake routes | mate"
 
 

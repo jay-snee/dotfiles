@@ -1,4 +1,5 @@
-export EDITOR="mate -w"
+export EDITOR="vi"
+export PATH=$PATH:/usr/local/git/bin
 export PATH=$PATH:~/bin
 
 export AUTOFEATURE=true
@@ -6,3 +7,15 @@ export AUTOFEATURE=true
 # MacPorts Installer addition on 2010-09-04_at_14:29:43: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
+
+
+#for postgres..
+export PATH=/Library/PostgreSQL/9.2/bin:$PATH
+#for rbenv
+eval "$(rbenv init -)"
+
+
+# Set up Imagecrap
+# export MAGICK_HOME="$HOME/bin/ImageMagick-6.7.9"
+# export PATH="$MAGICK_HOME/bin:$PATH"
+# export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"

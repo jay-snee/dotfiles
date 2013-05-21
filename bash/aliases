@@ -16,16 +16,18 @@ alias gcn='git checkout -b'
 alias gco='git checkout'
 alias gitk='screen -d -m gitk'
 alias gb="git branch"
-alias ga="git add"
+alias ga="git add .; gc"
 alias gpo="git push origin"
 alias gph="git push heroku master"
-alias "hvs"="HEROKU_SSL_VERIFY=disable heroku"
+alias gps="git push staging staging:master"
 alias bs="bin/spectre"
 
 # utils
 alias ls="ls -al"
 alias psaux="ps aux | grep"
 alias errlog="tail -f /var/log/apache2/error_log"
+alias ec2="ssh -i ~/.ssh/jaykey.pem ec2-user@arcaneindustries.co.uk"
+alias ec3="ssh -i ~/.ssh/jaykey.pem ec2-user@moodle.arcaneindustries.co.uk"
 
 # Rails
 alias resetapp="bundle exec rake app:reset"
@@ -33,5 +35,10 @@ alias unit="rake test:units"
 alias runspec="rspec spec --color --format doc"
 alias cuke="bundle exec cucumber -r features"
 alias routes="rake routes | mate"
+alias postgres="postgres -D /usr/local/var/postgres"
 
+# Vagrant
+
+alias vu="vagrant up"
+alias vd="vagrant destroy"
 
